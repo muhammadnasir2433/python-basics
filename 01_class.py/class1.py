@@ -1,0 +1,5 @@
+name : tuple[str,int,float] = ('nasar',8,8.9)
+print(name) 
+print(type(name)) 
+print(id(name)) 
+print(dir(name))
