@@ -1,5 +1,6 @@
-from typing import Callable
+from typing import Tuple, Dict
 
-add : Callable[[int,int],int] = lambda x,y : x + y
-result = add(19,50)
-print(result) 
+def my_function(a:int,b:int,*abc:int,**xyz:int)->None:
+    print(a,b,abc,xyz)
+
+my_function(1,2, 2,3,4,5,6,  d = 4,e = 8, c = 80)
